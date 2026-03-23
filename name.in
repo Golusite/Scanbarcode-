@@ -1,0 +1,11 @@
+<!-- PAGE 3: BLOG - QRIS GUIDE -->
+<section id="blog-1" class="content-section" style="background: white;">
+    <div class="container">
+        <h2 class="section-title">Panduan Pembayaran QRIS</h2>
+        <div class="blog-content">
+            <p>Di Indonesia, QRIS adalah hal yang sangat penting...</p>
+            <p>QRIS singkatan dari Quick Response Code Indonesian Standard...</p>
+            <!-- Is section mein poora QRIS ka blog likha hai -->
+        </div>
+    </div>
+</section>
