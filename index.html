@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO OPTIMIZATION -->
+    <title>ScanBarcode - Alat Pindai Barcode & QR Code Terbaik 2026</title>
+    <meta name="description" content="Solusi scan barcode & QR code terpercaya di Indonesia. Support QRIS, BPOM, e-wallet. Pemindai tercepat, akurat, & aman.">
+    <meta name="keywords" content="scan barcode, qr code scanner, scan barcode online, cek bpom, qris scanner">
+    <meta name="author" content="ScanBarcode">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1d4ed8;
+            --secondary: #0f172a;
+            --bg-body: #f8fafc;
+            --text-dark: #1e293b;
+            --text-gray: #64748b;
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+            line-height: 1.8;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- Header --- */
+        header { background: var(--secondary); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: white; letter-spacing: -1px; }
+        .logo span { color: var(--primary); }
+        
+        /* Navigation Links */
+        .nav-links a { color: #cbd5e1; text-decoration: none; font-size: 0.85rem; margin-left: 15px; transition: 0.3s; }
+        .nav-links a:hover { color: white; }
+
+        /* --- Hero Section (Page 1) --- */
+        .hero { padding: 80px 0 60px; text-align: center; background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); color: white; }
+        .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; line-height: 1.2; }
+        .hero p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* --- Compact Camera Box --- */
+        .scanner-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            overflow: hidden;
+            border: 1px solid #334155;
+            position: relative;
+        }
+        #reader { width: 100%; height: 300px; background: #000; position: relative; }
+        #reader video { width: 100%; height: 100%; object-fit: cover; }
+        .torch-btn {
+            position: absolute; bottom: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; border: 1px solid rgba(255,255,255,0.3); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; z-index: 10;
+        }
+        .torch-btn.active { background: var(--primary); border-color: var(--primary); }
+        .scanner-controls { padding: 15px; background: #1e293b; border-top: 1px solid #334155; text-align: center; }
+        .btn-start {
+            background: var(--primary); color: white; border: none; padding: 12px 35px; font-size: 1rem; font-weight: 700; border-radius: 50px; cursor: pointer; transition: 0.3s;
+        }
+        .scan-result { margin-top: 15px; padding: 15px; background: #064e3b; color: #ecfdf5; border-radius: 8px; font-weight: 600; word-break: break-all; display: none; }
+
+        /* --- Blog/Content Pages Style --- */
+        .content-section { padding: 80px 0; border-bottom: 1px solid #e2e8f0; }
+        .section-title { font-size: 2rem; font-weight: 800; color: var(--secondary); margin-bottom: 30px; text-align: center; }
+        .blog-content { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: var(--text-dark); }
+        .blog-content p { margin-bottom: 20px; }
+        .blog-content h3 { color: var(--primary); margin-top: 40px; margin-bottom: 20px; font-size: 1.5rem; }
+        .highlight-box { background: #eff6ff; padding: 30px; border-radius: 12px; margin-top: 30px; border-left: 4px solid var(--primary); }
+
+        /* --- Footer --- */
+        footer { background: var(--secondary); color: #94a3b8; padding: 40px 0; text-align: center; margin-top: 60px; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <div class="logo">Scan<span>Barcode</span></div>
+            <nav class="nav-links">
+                <a href="#about">Tentang</a>
+                <a href="#blog-1">Panduan QRIS</a>
+                <a href="#blog-2">Cek BPOM</a>
+                <a href="#privacy">Privasi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE 1: HOME / HERO -->
+        <section class="hero">
+            <div class="container">
+                <h1>Pemindai Barcode & QR Tercepat 2026</h1>
+                <p>Solusi scan barcode & QR code terpercaya di Indonesia. Support QRIS, BPOM, e-wallet. Tanpa aplikasi.</p>
+
+                <div class="scanner-wrapper">
+                    <div id="reader">
+                        <button id="torch-btn" class="torch-btn" onclick="toggleTorch()" style="display:none;">🔦</button>
+                    </div>
+                    <div class="scanner-controls">
+                        <button id="start-btn" class="btn-start" onclick="startCamera()">Mulai Kamera</button>
+                        <p id="status-msg" style="margin-top: 10px; font-size: 0.85rem; color: #94a3b8;">Izinkan akses kamera untuk memulai</p>
+                        <div id="result-box" class="scan-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: ABOUT US -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Tentang ScanBarcode</h2>
+                <div class="blog-content">
+                    <p><strong>ScanBarcode adalah apa?</strong> ScanBarcode adalah alat digital yang dikembangkan pada tahun 2026 untuk memudahkan pemindaian barcode. Dengan teknologi canggih, kami dapat mendeteksi berbagai jenis kode hanya dalam hitungan milidetik. Misi kami adalah memberikan akses pemindai barcode yang andal tanpa perlu mengunduh aplikasi berat.</p>
+                    
+                    <p><strong>Visi Kami (2026):</strong> Kami ingin memastikan setiap orang di Indonesia memiliki akses ke pemindai barcode yang cepat. Baik itu pelajar, pemilik bisnis, atau pelanggan biasa, ScanBarcode adalah solusi yang dapat diandalkan.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Mengapa Memilih ScanBarcode?</h3>
+                        <ul>
+                            <li>🚀 <strong>Super Cepat:</strong> Klik sekali dan hasil langsung muncul.</li>
+                            <li>🛡️ <strong>Privasi Utama:</strong> Kami tidak menyimpan data Anda di server manapun. Semua diproses di browser Anda.</li>
+                            <li>📱 <strong>Multi-Perangkat:</strong> Berjalan lancar di Ponsel, Tablet, maupun Laptop.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: BLOG - QRIS GUIDE -->
+        <section id="blog-1" class="content-section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Panduan Pembayaran QRIS</h2>
+                <div class="blog-content">
+                    <p>Di Indonesia, QRIS adalah hal yang sangat penting. QRIS singkatan dari <strong>Quick Response Code Indonesian Standard</strong>. Jika Anda pergi ke warung atau toko, Anda hampir selalu melihat kode QRIS.</p>
+                    
+                    <h3>Cara Memindai QRIS dengan ScanBarcode?</h3>
+                    <p>1. Klik tombol "Mulai Kamera" di kotak pemindai di atas.</p>
+                    <p>2. Arahkan ponsel Anda ke kode QRIS.</p>
+                    <p>3. Setelah dipindai, Anda akan melihat tautan pembayaran atau ID merchant.</p>
+                    <p>ScanBarcode secara otomatis mendeteksi kode QRIS, sehingga Anda tidak perlu mengetik secara manual.</p>
+                    
+                    <h3>Manfaat QRIS</h3>
+                    <p>Dengan QRIS, Anda terbebas dari risiko membawa uang tunai. Ini kompatibel dengan semua dompet digital utama seperti GoPay, OVO, DANA, ShopeePay. ScanBarcode memastikan pembayaran Anda sampai ke tujuan yang benar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: BLOG - BPOM CHECK -->
+        <section id="blog-2" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Cek BPOM - Apakah Makanan Anda Aman?</h2>
+                <div class="blog-content">
+                    <p>Pernahkah Anda bertanya-tanya apakah obat atau makanan yang Anda beli di pasar itu asli atau palsu? Di sinilah peran BPOM (Badan Pengawas Obat dan Makanan) menjadi sangat krusial.</p>
+                    
+                    <h3>Dimana Nomor BPOM?</h3>
+                    <p>Setiap obat atau produk makanan kemasan memiliki barcode atau kode di bagian belakang yang berisi nomor registrasi BPOM.</p>
+                    
+                    <h3>Bagaimana ScanBarcode Membantu?</h3>
+                    <p>Ketika Anda memindai barcode tersebut dengan ScanBarcode, Anda akan mendapatkan kode unik produk. Anda dapat mencari kode tersebut di situs web resmi BPOM untuk memverifikasi apakah produk tersebut terdaftar atau tidak. Ini sangat berguna untuk obat-obatan agar terhindar dari obat palsu.</p>
+                    
+                    <p><strong>Tips:</strong> Selalu beli produk yang nomor BPOM-nya jelas dan terverifikasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: BUSINESS & INVENTORY -->
+        <section id="blog-3" class="content-section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">ScanBarcode untuk Pemilik Bisnis</h2>
+                <div class="blog-content">
+                    <p>Jika Anda adalah pemilik toko atau mengelola gudang, ScanBarcode adalah anugerah bagi Anda.</p>
+                    
+                    <h3>Manajemen Inventaris</h3>
+                    <p>Memasukkan detail produk secara manual sangat melelahkan. Dengan ScanBarcode, Anda dapat memindai barcode rak untuk memasukkan entri ke dalam sistem Anda. Proses ini 10x lebih cepat daripada entri manual.</p>
+                    
+                    <h3>Pengecekan Harga</h3>
+                    <p>Alat ini juga terbaik untuk analisis kompetitor. Cukup pergi ke supermarket, pindai produk, dan catat harganya. Tidak perlu aplikasi tambahan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: TECHNOLOGY BEHIND BARCODES -->
+        <section id="blog-4" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Teknologi - Bagaimana Cara Kerjanya?</h2>
+                <div class="blog-content">
+                    <p>Di balik layar ScanBarcode, kami menggunakan algoritma pemrosesan gambar yang canggih. Kami menggunakan pustaka seperti <strong>html5-qrcode</strong> dan <strong>ZXing</strong>.</p>
+                    
+                    <h3>Format yang Didukung:</h3>
+                    <ul>
+                        <li><strong>QR Code:</strong> Kotak persegi yang menyimpan URL atau teks.</li>
+                        <li><strong>EAN-13:</strong> Standar global untuk produk ritel.</li>
+                        <li><strong>UPC-A:</strong> Standar dominan di Amerika Utara.</li>
+                        <li><strong>Code 128:</strong> Sering digunakan untuk logistik dan pengiriman.</li>
+                    </ul>
+                    <p>Mesin AI kami secara otomatis mendeteksi jenis kode dan memprosesnya sesuai.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 7: SECURITY & PRIVACY -->
+        <section id="privacy" class="content-section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Keamanan & Privasi</h2>
+                <div class="blog-content">
+                    <p>Kami menempatkan privasi di tempat tertinggi di ScanBarcode.</p>
+                    
+                    <h3>Tidak Ada Penyimpanan Data</h3>
+                    <p>Saat Anda memindai barcode, data tersebut tidak dikirim ke server kami. Data tersebut diproses murni di perangkat Anda (browser). Ini berarti riwayat pemindaian Anda tidak tersedia untuk siapa pun.</p>
+                    
+                    <h3>Enkripsi HTTPS</h3>
+                    <p>Jika Anda mengakses situs web ini melalui koneksi aman, data Anda ditransfer dalam bentuk terenkripsi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 8: COMPARISON -->
+        <section id="comparison" class="content-section">
+            <div class="container">
+                <h2 class="section-title">ScanBarcode vs Aplikasi Lain</h2>
+                <div class="blog-content">
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="background: #0f172a; color: white; text-align: left;">
+                                <th style="padding: 10px;">Fitur</th>
+                                <th style="padding: 10px;">ScanBarcode</th>
+                                <th style="padding: 10px;">Aplikasi Lain</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border-bottom: 1px solid #eee;">Instalasi</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #eee; color: green; font-weight: bold;">Tidak Perlu</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #eee; color: red;">Diperlukan</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border-bottom: 1px solid #eee;">Iklan</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #eee; color: green; font-weight: bold;">Tidak Ada</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #eee; color: orange;">Terlalu Banyak</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;">Kecepatan</td>
+                                <td style="padding: 10px; color: green; font-weight: bold;">Instan</td>
+                                <td style="padding: 10px; color: red;">Lambat</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 9: FAQ -->
+        <section id="faq" class="content-section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+                <div class="blog-content">
+                    <details>
+                        <summary style="padding: 15px; background: #f1f5f9; cursor: pointer; font-weight: bold; border-radius: 8px; margin-bottom: 10px;">Apakah alat ini gratis?</summary>
+                        <div style="padding: 15px;">Ya, ScanBarcode 100% gratis. Anda dapat menggunakannya tanpa batas.</div>
+                    </details>
+                    <details>
+                        <summary style="padding: 15px; background: #f1f5f9; cursor: pointer; font-weight: bold; border-radius: 8px; margin-bottom: 10px;">Kamera tidak berfungsi?</summary>
+                        <div style="padding: 15px;">Pastikan Anda telah memberikan izin kamera di browser. Alat ini bekerja terbaik saat menggunakan koneksi HTTPS.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 10: CONTACT / FOOTER -->
+        <section id="contact" class="content-section">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <div class="blog-content">
+                    <p>Jika Anda memiliki pertanyaan atau ingin memberikan umpan balik tentang ScanBarcode, silakan hubungi tim kami.</p>
+                    <!-- Fake email removed as requested -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Clean Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; display: flex; margin-bottom: 20px;">Scan<span>Barcode</span></div>
+            <p>&copy; 2026 ScanBarcode. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- SCANNER LOGIC ---
+        let html5QrcodeScanner = null;
+        let isScanning = false;
+        let isTorchOn = false;
+
+        function startCamera() {
+            const btn = document.getElementById('start-btn');
+            const msg = document.getElementById('status-msg');
+            
+            if (isScanning) return;
+
+            btn.textContent = "Memuat...";
+            btn.disabled = true;
+            msg.textContent = "Mohon izinkan akses kamera...";
+
+            html5QrcodeScanner = new Html5Qrcode("reader");
+            
+            const config = { 
+                fps: 10, 
+                qrbox: { width: 200, height: 200 },
+                aspectRatio: 1.0
+            };
+
+            html5QrcodeScanner.start(
+                { facingMode: "environment" }, 
+                config, 
+                onScanSuccess,
+                (errorMessage) => {}
+            ).then(() => {
+                isScanning = true;
+                btn.style.display = 'none';
+                msg.style.display = 'none';
+                document.getElementById('torch-btn').style.display = 'flex';
+            }).catch(err => {
+                console.error(err);
+                btn.textContent = "Mulai Kamera";
+                btn.disabled = false;
+                msg.textContent = "Kamera gagal. Silakan gunakan HTTPS/Localhost.";
+            });
+        }
+
+        function toggleTorch() {
+            if (!html5QrcodeScanner || !isScanning) return;
+            isTorchOn = !isTorchOn;
+            const btn = document.getElementById('torch-btn');
+
+            html5QrcodeScanner.applyVideoConstraints({
+                facingMode: "environment",
+                advanced: [{ torch: isTorchOn }]
+            }).then(() => {
+                if(isTorchOn) btn.classList.add('active');
+                else btn.classList.remove('active');
+            }).catch(err => {
+                console.error("Torch not supported", err);
+                isTorchOn = !isTorchOn;
+            });
+        }
+
+        function onScanSuccess(decodedText, decodedResult) {
+            if (html5QrcodeScanner) {
+                html5QrcodeScanner.stop();
+                isScanning = false;
+                document.getElementById('torch-btn').style.display = 'none';
+            }
+
+            const resultBox = document.getElementById('result-box');
+            const btn = document.getElementById('start-btn');
+            const msg = document.getElementById('status-msg');
+
+            resultBox.textContent = decodedText;
+            resultBox.style.display = 'block';
+            
+            btn.style.display = 'inline-block';
+            btn.textContent = 'Pindai Ulang';
+            btn.disabled = false;
+            
+            msg.style.display = 'block';
+            msg.textContent = "Scan Berhasil!";
+        }
+    </script>
+</body>
+</html>
