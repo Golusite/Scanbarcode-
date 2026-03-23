@@ -1,0 +1,11 @@
+<!-- PAGE 4: BLOG - BPOM CHECK -->
+<section id="blog-2" class="content-section">
+    <div class="container">
+        <h2 class="section-title">Cek BPOM - Apakah Makanan Anda Aman?</h2>
+        <div class="blog-content">
+            <p>Pernahkah Anda bertanya-tanya apakah obat atau makanan...</p>
+            <p>Di sinilah peran BPOM (Badan Pengawas Obat dan Makanan)...</p>
+            <!-- Is section mein BPOM ka blog likha hai -->
+        </div>
+    </div>
+</section>
